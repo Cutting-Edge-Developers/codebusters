@@ -1,0 +1,63 @@
+body {
+  font-family: $font-family;
+  background: linear-gradient(
+    180deg,
+    rgba(236, 178, 46, 0) -4.71%,
+    rgba(255, 255, 255, 0.33) 4.86%
+  );
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  display: flex;
+  margin: 0 auto 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  height: 42px;
+  padding: 10px 30px;
+  font-size: 14px;
+  font-weight: 500;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  &-primary {
+    background-color: $color-primary;
+    color: #fff;
+    &:hover {
+      background-color: darken($color-primary, 5%);
+    }
+  }
+  &-icon {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 21px;
+    padding: 10px 0;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  &-transparent {
+    background: transparent;
+    border: 1px solid $color-primary;
+    color: $color-primary;
+    transition: all 0.3s ease-out;
+    &:hover {
+      background-color: $color-primary;
+      color: #fff;
+      border: none;
+    }
+  }
+}
