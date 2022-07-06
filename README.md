@@ -17,7 +17,7 @@
 
 ## About
 
-Portfolio site made by the Cutting Edge Developers Community and also by_Codebusters_ for the Cutting Edge Developers Community.
+Portfolio site made by the Cutting Edge Developers Community and also by _Codebusters_ for the Cutting Edge Developers Community.
 
 ![Adsız](https://user-images.githubusercontent.com/60389199/176974890-829ffcc0-f341-4791-9b00-97a68da8578e.png)
 
