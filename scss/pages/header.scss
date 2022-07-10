@@ -1,0 +1,50 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14.6042px 97.3611px;
+  gap: 236.59px;
+  position: absolute;
+  min-width: 1402px;
+  height: 70.68px;
+  width: 100%;
+}
+.logo {
+  width: 54px;
+  height: 38px;
+  font-family: "Imperial Script";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 31.1556px;
+  line-height: 38px;
+  /* identical to box height */
+  color: #000000;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.navigation-list {
+  font-weight: 500;
+  font-size: 14.6042px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.81);
+  display: flex;
+  justify-content: center;
+}
+.navigation-items {
+  padding: 10px;
+}
+
+.header-btn {
+  padding: 10px 29.2083px;
+  gap: 10px;
+  height: 41.47px;
+  background: #fcc028;
+  color: #fff;
+  border-radius: 4.86806px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
