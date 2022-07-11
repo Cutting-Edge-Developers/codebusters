@@ -1,12 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Imperial+Script&family=Poppins:wght@400;500;600&display=swap");
-@import "config/variables";
-@import "config/mixin";
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Poppins:wght@400;500;600&display=swap');
+@import 'config/variables';
+@import 'config/mixin';
 //
-@import "helper/global";
-@import "helper/formalize";
-@import "helper/normalize";
+@import 'helper/global';
+@import 'helper/formalize';
+@import 'helper/normalize';
 //
-@import "pages/header";
-@import "pages/hero";
-@import "pages/index";
-@import "pages/footer";
+@import 'pages/header';
+@import 'pages/index';
+@import 'pages/footer';
