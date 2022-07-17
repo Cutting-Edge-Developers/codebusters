@@ -101,62 +101,65 @@
 }
 
 @media (max-width: 576px) {
-    //About Section
-    #about {
-      .about-image {
-        display: none;
+  //About Section
+  #about {
+    .about-image {
+      display: none;
+    }
+
+    .about-info {
+      text-align: center;
+
+      .whisper {
+        font-size: 18px;
       }
-  
-      .about-info {
-        text-align: center;
-  
-        .whisper {
-          font-size: 18px;
-  
-        }
-  
-        .about-title {
-          font-size: 28px;
-        }
-  
-        .about-text {
-          text-align: justify;
-          font-size: 16px;
-          line-height: 27px;
-        }
-  
-        .about-experiences {
-          flex-wrap: nowrap;
-          justify-content: space-between;
-  
-          .item {
-            display: flex;
+
+      .about-title {
+        font-size: 28px;
+      }
+
+      .about-text {
+        text-align: justify;
+        font-size: 16px;
+        line-height: 27px;
+      }
+
+      .about-experiences {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .item {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .item-info {
             justify-content: center;
-            align-items: center;
-  
-            .item-info {
-              justify-content: center;
-  
-              .title {
-                font-size: 10px;
-              }
-  
-              .info-text {
-                font-size: 12px;
-                white-space: nowrap;
-              }
+
+            .title {
+              font-size: 10px;
             }
-  
-            img {
-              width: 40px;
-              height: 40px;
+
+            .info-text {
+              font-size: 12px;
+              white-space: nowrap;
             }
           }
+
+          img {
+            width: 40px;
+            height: 40px;
+          }
         }
-  
-        .about-buttons {
-          justify-content: center;
-        }
+      }
+
+      .about-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
       }
     }
   }
+}
