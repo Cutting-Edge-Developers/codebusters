@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Imperial+Script&family=Poppins:wght@400;500;600&display=swap");
 body {
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(180deg, rgba(236, 178, 46, 0) -4.71%, rgba(255, 255, 255, 0.33) 4.86%);
+  background: linear-gradient(180deg, rgba(236, 178, 46, 0.0754) 0%, rgba(255, 255, 255, 0.1144) 100%);
 }
 
 img {
@@ -123,10 +123,8 @@ td {
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -161,12 +159,9 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
@@ -174,10 +169,8 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -194,13 +187,10 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
-  /* 2 */
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -218,10 +208,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -271,14 +259,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -286,8 +270,7 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input {
-  /* 1 */
+input { /* 1 */
   overflow: visible;
 }
 
@@ -296,8 +279,7 @@ input {
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
 
@@ -346,18 +328,12 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
@@ -380,10 +356,8 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
@@ -399,10 +373,8 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -417,10 +389,8 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /* Interactive
@@ -454,3 +424,285 @@ template {
 [hidden] {
   display: none;
 }
+
+#about .about-container * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+#about .about-container {
+  display: flex;
+  width: 100%;
+  z-index: 0;
+}
+#about .about-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+#about .about-image img {
+  min-height: 600px;
+  min-width: 200px;
+}
+#about .about-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 650px;
+}
+#about .about-info .whisper {
+  font-weight: 500;
+  font-size: 20px;
+  color: #fcc028;
+  line-height: 30px;
+}
+#about .about-info .about-title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 60px;
+}
+#about .about-info .about-text {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 27px;
+}
+#about .about-info .about-experiences {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin: 36px 0;
+}
+#about .about-info .about-experiences .item {
+  display: flex;
+  gap: 10px;
+}
+#about .about-info .about-experiences .item .item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#about .about-info .about-experiences .item .item-info .title {
+  font-weight: 500;
+  color: #fcc028;
+  font-size: 16px;
+}
+#about .about-info .about-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+#about .about-info .about-buttons .hire-me {
+  width: 157px;
+}
+#about .about-info .about-buttons .download-cv {
+  color: rgba(0, 0, 0, 0.81);
+  font-weight: 600;
+  border: 0;
+}
+#about .about-info .about-buttons .download-cv svg {
+  margin-left: 10px;
+}
+#about .about-info .about-buttons .download-cv:hover {
+  background-color: unset;
+}
+
+@media (max-width: 576px) {
+  #about .about-image {
+    display: none;
+  }
+  #about .about-info {
+    text-align: center;
+  }
+  #about .about-info .whisper {
+    font-size: 18px;
+  }
+  #about .about-info .about-title {
+    font-size: 28px;
+  }
+  #about .about-info .about-text {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 27px;
+  }
+  #about .about-info .about-experiences {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #about .about-info .about-experiences .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #about .about-info .about-experiences .item .item-info {
+    justify-content: center;
+  }
+  #about .about-info .about-experiences .item .item-info .title {
+    font-size: 10px;
+  }
+  #about .about-info .about-experiences .item .item-info .info-text {
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  #about .about-info .about-experiences .item img {
+    width: 40px;
+    height: 40px;
+  }
+  #about .about-info .about-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+}
+#services .services-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+#services .services-container .whisper {
+  font-weight: 500;
+  font-size: 16px;
+  color: #fcc028;
+  line-height: 12px;
+}
+#services .services-container .title {
+  font-weight: 500;
+  font-size: 32px;
+  color: rgba(0, 0, 0, 0.81);
+  line-height: 12px;
+}
+#services .services-container .see-more {
+  align-self: flex-end;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+#services .services-container .service-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#services .services-container .service-items .service-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#services .services-container .service-items .service-item .item-title {
+  font-weight: 500;
+  font-size: 19.4px;
+  line-height: 29.2px;
+  margin: 9.4px 0;
+  color: rgba(0, 0, 0, 0.81);
+}
+#services .services-container .service-items .service-item .item-description {
+  max-width: 284px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 22px;
+  font-size: 14.6px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 576px) {
+  #services .services-container {
+    width: 100%;
+  }
+  #services .services-container .whisper {
+    font-size: 16px;
+  }
+  #services .services-container .title {
+    font-size: 24px;
+    line-height: 12px;
+  }
+  #services .services-container .see-more {
+    align-self: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  #services .services-container .service-items {
+    flex-direction: column;
+    gap: 20px;
+  }
+  #services .services-container .service-items .service-item .item-title {
+    font-size: 18px;
+  }
+}
+#portfolio .portfolio-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 21px;
+}
+#portfolio .portfolio-container .whisper {
+  font-weight: 500;
+  font-size: 16px;
+  color: #fcc028;
+  line-height: 12px;
+}
+#portfolio .portfolio-container .title {
+  font-weight: 500;
+  font-size: 32px;
+  color: rgba(0, 0, 0, 0.81);
+  line-height: 12px;
+}
+#portfolio .portfolio-container .see-more {
+  align-self: flex-end;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+#portfolio .portfolio-container .service-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+#portfolio .portfolio-container .service-items .service-item .item-image {
+  max-width: 549px;
+  max-height: 404px;
+}
+#portfolio .portfolio-container .service-items .service-item .item-image img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 576px) {
+  #portfolio .portfolio-container {
+    margin: 0 0;
+  }
+  #portfolio .portfolio-container .whisper {
+    font-weight: 500;
+    font-size: 16px;
+    color: #fcc028;
+    line-height: 12px;
+  }
+  #portfolio .portfolio-container .title {
+    font-size: 24px;
+    white-space: nowrap;
+  }
+  #portfolio .portfolio-container .see-more {
+    align-self: center;
+    font-size: 14px;
+  }
+  #portfolio .portfolio-container .service-items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+  }
+  #portfolio .portfolio-container .service-items .service-item .item-image {
+    max-width: 549px;
+    max-height: 404px;
+  }
+  #portfolio .portfolio-container .service-items .service-item .item-image img {
+    width: 100%;
+    height: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */
