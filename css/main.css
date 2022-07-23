@@ -910,3 +910,59 @@ template {
 .testimonials-arrowbox .arrow-left {
   transform: rotate(180deg);
 }
+
+.clients .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1400px) {
+  .clients .container {
+    margin-top: 50px;
+  }
+}
+.clients-header {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.clients-header .pre-title {
+  font-weight: 500;
+  font-size: clamp(12px, -0.875rem + 8.333vw, 15px);
+}
+.clients-header .title {
+  font-weight: 500;
+  font-size: clamp(26px, -0.875rem + 8.333vw, 32px);
+}
+.clients-items {
+  max-width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .clients-items {
+    gap: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .clients-items {
+    gap: 100px;
+    margin-top: 20px;
+  }
+}
+.clients-item {
+  max-width: calc(50% - 20px);
+  height: 40px;
+}
+@media (min-width: 768px) {
+  .clients-item {
+    max-width: calc(25% - 40px);
+  }
+}
+.clients-item:last-child {
+  width: auto;
+  height: auto;
+}
