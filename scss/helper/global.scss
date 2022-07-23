@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: $font-family;
   background: linear-gradient(
@@ -18,6 +22,12 @@ img {
   padding-left: 20px;
   padding-right: 20px;
   width: 100%;
+  @include mq('tablet') {
+    margin-bottom: 100px;
+  }
+  @include mq('large') {
+    margin-bottom: 130px;
+  }
 }
 
 .btn {
@@ -60,4 +70,25 @@ img {
       border: none;
     }
   }
+}
+
+.pre-title {
+  display: block;
+  color: $color-primary;
+  margin-bottom: 6px;
+}
+.title {
+  color: $color-black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.subtitle {
+  color: $color-green;
+  font-size: clamp(1.2rem, -0.875rem + 8.333vw, 23px);
+  margin-bottom: 10px;
+}
+.description {
+  font-size: 17px;
+  line-height: 26px;
+  color: $color-gray;
 }
