@@ -72,3 +72,23 @@ prevBtn.addEventListener('click', function () {
   }
   showReview()
 })
+
+// validate email
+
+const emailField = document.querySelector('input[type=email]')
+const button = document.querySelector('#btnSubmit')
+const email = emailField.value
+function validateEmail(email) {
+  const re =
+    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+  if (!re.test(email)) {
+    emailField.classList.add('shake')
+    emailField.focus()
+  }
+  return re.test(String(email).toLowerCase())
+}
+button.addEventListener('click', function (e) {
+  if (!validateEmail(email)) {
+    emailField.focus()
+  }
+})

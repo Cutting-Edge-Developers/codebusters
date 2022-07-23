@@ -966,3 +966,135 @@ template {
   width: auto;
   height: auto;
 }
+
+.contact {
+  background: linear-gradient(180deg, rgba(236, 178, 46, 0.0754) 0%, rgba(255, 255, 255, 0.1144) 100%);
+  padding-top: 50px;
+}
+.contact .container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+@media (min-width: 768px) {
+  .contact .container {
+    flex-direction: row;
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .contact .container {
+    -moz-column-gap: 100px;
+         column-gap: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  .contact .container {
+    -moz-column-gap: 150px;
+         column-gap: 150px;
+  }
+}
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.contact-content span {
+  font-size: clamp(12px, -0.875rem + 8.333vw, 15px);
+  color: rgba(0, 0, 0, 0.5);
+  display: block;
+}
+.contact-content .email,
+.contact-content .address,
+.contact-content .phone {
+  display: flex;
+  align-items: center;
+}
+.contact-header {
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .contact-header {
+    margin-left: 50px;
+  }
+}
+.contact-header .title {
+  text-align: center;
+  font-weight: 500;
+  font-size: clamp(26px, -0.875rem + 8.333vw, 32px);
+}
+@media (min-width: 768px) {
+  .contact-header .title {
+    text-align: left;
+  }
+}
+.contact-header .description {
+  font-size: clamp(12px, -0.875rem + 8.333vw, 15px);
+  color: rgba(0, 0, 0, 0.5);
+}
+.contact-icon {
+  width: 30px;
+  margin-right: 20px;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 10px;
+  max-width: 500px;
+  width: 100%;
+}
+.contact-form-item {
+  width: 100%;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 7px;
+  height: 60px;
+  padding: 10px;
+  font-size: clamp(12px, -0.875rem + 8.333vw, 15px);
+  color: rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+@media (min-width: 768px) {
+  .contact-form-item {
+    padding: 20px;
+  }
+}
+.contact-form-item:nth-child(4) {
+  height: 200px;
+}
+.contact-form-item.shake {
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
+}
+.contact-form .btn {
+  margin-top: 20px;
+  opacity: 0.5;
+  transition: all 0.3s ease-in-out;
+}
+.contact-form:valid .btn {
+  opacity: 1;
+}
+@-webkit-keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(-4%);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(4%);
+  }
+}
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(-4%);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(4%);
+  }
+}
